@@ -1,4 +1,5 @@
 import 'package:e_commerce_project/core/constants/app_common_strings.dart';
+import 'package:e_commerce_project/presentation/login/login_view.dart';
 import 'package:e_commerce_project/presentation/signup/signup_view.dart';
 import 'package:e_commerce_project/theme/app_color_theme.dart';
 import 'package:e_commerce_project/theme/app_common_size.dart';
@@ -86,21 +87,6 @@ class _WelcomeViewState extends State<WelcomeView> {
                     },
                   ),
                   SizedBox(height: AppCommonSize.size20),
-                  // Row(
-                  //   children: [
-                  //     Expanded(child: Divider()),
-                  //     Text(
-                  //       'Zaten hesabım var',
-                  //       style: TextStyle(
-                  //         color: Colors.white,
-                  //         fontSize: AppCommonSize.size16,
-                  //         fontWeight: FontWeight.w500,
-                  //       ),
-                  //     ),
-                  //     Expanded(child: Divider()),
-                  //   ],
-                  // ),
-                  // SizedBox(height: AppCommonSize.size12),
                   SizedBox(
                     width: double.infinity,
                     child: TextButton(
@@ -118,7 +104,7 @@ class _WelcomeViewState extends State<WelcomeView> {
                       onPressed: () {
                         Navigator.push(
                           context,
-                          MaterialPageRoute(builder: (context) => SignUpView()),
+                          MaterialPageRoute(builder: (context) => LoginView()),
                         );
                       },
                       child: Text(

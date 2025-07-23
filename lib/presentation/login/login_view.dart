@@ -1,5 +1,4 @@
 import 'package:e_commerce_project/presentation/forgot_password/forgot_password_view.dart';
-import 'package:e_commerce_project/presentation/login/login_view.dart';
 import 'package:e_commerce_project/presentation/signup/signup_view.dart';
 import 'package:e_commerce_project/theme/app_color_theme.dart';
 import 'package:e_commerce_project/theme/app_common_size.dart';
@@ -8,8 +7,8 @@ import 'package:e_commerce_project/widgets/gradient_button.dart';
 import 'package:e_commerce_project/widgets/social_login_button.dart';
 import 'package:flutter/material.dart';
 
-class SignUpView extends StatelessWidget {
-  const SignUpView({super.key});
+class LoginView extends StatelessWidget {
+  const LoginView({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -65,7 +64,7 @@ class SignUpView extends StatelessWidget {
                             Expanded(
                               child: Center(
                                 child: Text(
-                                  'Hesap Oluştur',
+                                  'Yeniden Hoş Geldiniz',
                                   style: TextStyle(
                                     color: Colors.white,
                                     fontSize: AppCommonSize.size24,
@@ -83,7 +82,7 @@ class SignUpView extends StatelessWidget {
                 ),
               ),
               Positioned(
-                top: size.height * 0.15,
+                top: size.height * 0.20,
                 left: AppCommonSize.size24,
                 right: AppCommonSize.size24,
 
@@ -101,7 +100,7 @@ class SignUpView extends StatelessWidget {
                       mainAxisSize: MainAxisSize.min,
                       children: [
                         Text(
-                          'Hesabını oluştur',
+                          'Hesabınla devam et',
                           style: TextStyle(
                             fontSize: AppCommonSize.size20,
                             fontWeight: FontWeight.bold,
@@ -109,26 +108,13 @@ class SignUpView extends StatelessWidget {
                         ),
                         SizedBox(height: AppCommonSize.size8),
                         Text(
-                          'Alışveriş yolculuğu için hesabınızı kaydedin',
+                          'Alışverişe devam etmek için bilgilerinizi girin',
                           style: TextStyle(
                             fontSize: AppCommonSize.size14,
                             color: AppColorTheme.textSecondary,
                           ),
                         ),
                         SizedBox(height: AppCommonSize.size32),
-                        CustomTextField(
-                          label: "Kullanıcı adınız",
-                          prefixIcon: Icons.person_outline,
-                          keyboardType: TextInputType.emailAddress,
-                          validator: (p0) {
-                            if (p0 == null || p0.isEmpty) {
-                              return 'Lütfen adınızı giriniz';
-                            }
-
-                            return null;
-                          },
-                        ),
-                        SizedBox(height: AppCommonSize.size16),
                         CustomTextField(
                           label: "Email",
                           prefixIcon: Icons.email_outlined,
@@ -159,24 +145,26 @@ class SignUpView extends StatelessWidget {
                             return null;
                           },
                         ),
-                        SizedBox(height: 16),
-                        CustomTextField(
-                          label: "Şifrenizi doğrulayın",
-                          prefixIcon: Icons.lock_outline,
-                          keyboardType: TextInputType.visiblePassword,
-                          isPassword: true,
-                          validator: (p0) {
-                            if (p0 == null || p0.isEmpty) {
-                              return 'Lütfen şifrenizi doğrulayın';
-                            }
-
-                            return null;
-                          },
+                        Align(
+                          alignment: Alignment.centerRight,
+                          child: TextButton(
+                            onPressed: () {
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) => ForgotPasswordView(),
+                                ),
+                              );
+                            },
+                            style: TextButton.styleFrom(
+                              foregroundColor: AppColorTheme.primaryColor,
+                            ),
+                            child: Text('Şifremi Unuttum'),
+                          ),
                         ),
-                    
                         SizedBox(height: AppCommonSize.size24),
                         GradientButton(
-                          text: 'Hesap Oluştur',
+                          text: 'Giriş Yap',
                           onPressed: () {
                             if (_formKey.currentState!.validate()) {}
                           },
@@ -217,7 +205,7 @@ class SignUpView extends StatelessWidget {
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
                               Text(
-                                'Zeten Hesabım var',
+                                'Hesabınız yok mu ?',
                                 style: TextStyle(
                                   color: AppColorTheme.textSecondary,
                                 ),
@@ -227,11 +215,11 @@ class SignUpView extends StatelessWidget {
                                   Navigator.push(
                                     context,
                                     MaterialPageRoute(
-                                      builder: (context) => LoginView(),
+                                      builder: (context) => SignUpView(),
                                     ),
                                   );
                                 },
-                                child: Text('Giriş yap'),
+                                child: Text('Kaydol'),
                               ),
                             ],
                           ),

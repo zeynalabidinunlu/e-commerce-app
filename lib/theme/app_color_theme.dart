@@ -35,7 +35,7 @@ class AppColorTheme {
   static const Color dividerColor = Color(0xFFE5E7EB);
 
   // Metin Renkleri (Text Colors)
-  static const Color textPrimary = Color(0xFFFFFFFF); 
+  static const Color textPrimary = Color(0xFFFFFFFF);
   static const Color textSecondary = Color(0xFF6B7280);
   static const Color textTertiary = Color(0xFF9CA3AF);
   static const Color textInverse = Color(0xFF111827);
@@ -73,7 +73,9 @@ class AppColorTheme {
   static const Color priceColor = Color(0xFFDC2626); // Fiyat için kırmızı
   static const Color discountColor = Color(0xFF059669); // İndirim için yeşil
   static const Color soldOutColor = Color(0xFF6B7280); // Tükenen ürün için gri
-  static const Color newArrivalColor = Color(0xFFEC4899); // Yeni ürün için pembe
+  static const Color newArrivalColor = Color(
+    0xFFEC4899,
+  ); // Yeni ürün için pembe
 
   // Kategori Renkleri
   static const Color categoryMen = Color(0xFF1E40AF);
@@ -116,8 +118,11 @@ class AppColorTheme {
 
   // Gradient Renkleri
   static const List<Color> primaryGradient = [
+    Color(0xFF839DC1),
+    Color(0xFF5275A8),
+    Color(0xFF2D5695),
     Color(0xFF071A35),
-    Color(0xFF051221),
+   // Color(0xFF061630),
   ];
 
   static const List<Color> secondaryGradient = [
