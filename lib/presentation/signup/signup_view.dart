@@ -1,6 +1,4 @@
-import 'package:e_commerce_project/presentation/forgot_password/forgot_password_view.dart';
 import 'package:e_commerce_project/presentation/login/login_view.dart';
-import 'package:e_commerce_project/presentation/signup/signup_view.dart';
 import 'package:e_commerce_project/theme/app_color_theme.dart';
 import 'package:e_commerce_project/theme/app_common_size.dart';
 import 'package:e_commerce_project/widgets/custom_text_field.dart';
@@ -13,7 +11,7 @@ class SignUpView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final _formKey = GlobalKey<FormState>();
+    final formKey = GlobalKey<FormState>();
     final size = MediaQuery.of(context).size;
     return Scaffold(
       body: SingleChildScrollView(
@@ -95,7 +93,7 @@ class SignUpView extends StatelessWidget {
                     borderRadius: BorderRadius.circular(AppCommonSize.size20),
                   ),
                   child: Form(
-                    key: _formKey,
+                    key: formKey,
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       mainAxisSize: MainAxisSize.min,
@@ -173,12 +171,12 @@ class SignUpView extends StatelessWidget {
                             return null;
                           },
                         ),
-                    
+
                         SizedBox(height: AppCommonSize.size24),
                         GradientButton(
                           text: 'Hesap Oluştur',
                           onPressed: () {
-                            if (_formKey.currentState!.validate()) {}
+                            if (formKey.currentState!.validate()) {}
                           },
                         ),
                         SizedBox(height: AppCommonSize.size24),
