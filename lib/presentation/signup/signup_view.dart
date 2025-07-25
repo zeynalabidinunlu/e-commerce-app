@@ -209,8 +209,9 @@ class SignUpView extends StatelessWidget {
                             ),
                           ],
                         ),
-                        SizedBox(height: AppCommonSize.size24),
+                        SizedBox(height: AppCommonSize.size8),
                         Center(
+                          
                           child: Row(
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
