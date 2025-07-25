@@ -1,8 +1,5 @@
-import 'package:e_commerce_project/presentation/change_language/change_language_view.dart';
-import 'package:e_commerce_project/presentation/forgot_email/forgot_email_view.dart';
-import 'package:e_commerce_project/presentation/forgot_password/forgot_password_view.dart';
-import 'package:e_commerce_project/presentation/otp_verification/otp_verification_view.dart';
-import 'package:e_commerce_project/presentation/splash/splash_view.dart';
+
+import 'package:e_commerce_project/presentation/main/main_view.dart';
 import 'package:e_commerce_project/theme/app_color_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -29,7 +26,7 @@ class MainApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Alışverişim',
       theme: AppColorTheme.lightTheme,
-      home: ChangeLanguageView(),
+      home: MainView(),
     );
   }
 }
