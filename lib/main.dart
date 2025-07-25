@@ -1,3 +1,4 @@
+import 'package:e_commerce_project/presentation/change_language/change_language_view.dart';
 import 'package:e_commerce_project/presentation/forgot_email/forgot_email_view.dart';
 import 'package:e_commerce_project/presentation/forgot_password/forgot_password_view.dart';
 import 'package:e_commerce_project/presentation/otp_verification/otp_verification_view.dart';
@@ -28,7 +29,7 @@ class MainApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Alışverişim',
       theme: AppColorTheme.lightTheme,
-      home: ForgotPasswordView(),
+      home: ChangeLanguageView(),
     );
   }
 }
