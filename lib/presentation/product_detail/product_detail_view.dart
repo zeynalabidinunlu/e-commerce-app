@@ -584,13 +584,15 @@ class _ProductDetailViewState extends State<ProductDetailView> {
                       ),
                     ),
                   ),
-                SizedBox(width: AppCommonSize.size16,),
-                Expanded(child: GradientButton(text: 'Sepete Ekle - 399.99 ₺', onPressed: () {
-                  
-                },))
+                  SizedBox(width: AppCommonSize.size16),
+                  Expanded(
+                    child: GradientButton(
+                      text: 'Sepete Ekle - 399.99 ₺',
+                      onPressed: () {},
+                    ),
+                  ),
                 ],
               ),
-            
             ),
           ),
         ],
