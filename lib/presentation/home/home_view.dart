@@ -1,3 +1,4 @@
+import 'package:e_commerce_project/presentation/product_detail/product_detail_view.dart';
 import 'package:e_commerce_project/theme/app_color_theme.dart';
 import 'package:e_commerce_project/theme/app_common_size.dart';
 import 'package:flutter/material.dart';
@@ -295,7 +296,12 @@ class HomeView extends StatelessWidget {
                         itemBuilder: (context, index) {
                           return InkWell(
                             onTap: () {
-                              // Navigator.push(context, MaterialPageRoute(builder: (context) => ProductDetailView(),))
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) => ProductDetailView(),
+                                ),
+                              );
                             },
                             child: Container(
                               width: 200,
@@ -573,10 +579,14 @@ class HomeView extends StatelessWidget {
                                                 SizedBox(
                                                   width: AppCommonSize.size4,
                                                 ),
-                                                  Text('4.5',style: TextStyle(
+                                                Text(
+                                                  '4.5',
+                                                  style: TextStyle(
                                                     fontWeight: FontWeight.bold,
-                                                    color:AppColorTheme.textInverse
-                                                  ),)
+                                                    color: AppColorTheme
+                                                        .textInverse,
+                                                  ),
+                                                ),
                                               ],
                                             ),
                                           ),
