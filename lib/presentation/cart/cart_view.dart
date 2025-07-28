@@ -1,3 +1,4 @@
+import 'package:e_commerce_project/presentation/check_out/check_out_view.dart';
 import 'package:e_commerce_project/theme/app_color_theme.dart';
 import 'package:e_commerce_project/theme/app_common_size.dart';
 import 'package:e_commerce_project/widgets/gradient_button.dart';
@@ -268,7 +269,15 @@ class CartView extends StatelessWidget {
           ],
         ),
         child: SafeArea(
-          child: GradientButton(text: 'Siparişi Onayla (2.147,97 ₺)', onPressed: () {}),
+          child: GradientButton(
+            text: 'Siparişi Onayla (2.147,97 ₺)',
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => CheckOutView()),
+              );
+            },
+          ),
         ),
       ),
     );
