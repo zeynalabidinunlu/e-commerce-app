@@ -1,4 +1,4 @@
-import 'package:e_commerce_project/presentation/payment/payment_view.dart';
+import 'package:e_commerce_project/presentation/order_confirmation/order_confirmation_view.dart';
 import 'package:e_commerce_project/theme/app_color_theme.dart';
 import 'package:e_commerce_project/theme/app_common_size.dart';
 import 'package:e_commerce_project/widgets/gradient_button.dart';
@@ -138,7 +138,6 @@ class _PaymentViewState extends State<PaymentView> {
             ),
           ),
           SliverToBoxAdapter(
-          
             child: Column(
               children: [
                 Container(
@@ -183,7 +182,7 @@ class _PaymentViewState extends State<PaymentView> {
                         ],
                       ),
                       _buildSaveCards(),
-                    //  SizedBox(height: 5),
+                      //  SizedBox(height: 5),
                       Container(
                         margin: EdgeInsets.all(AppCommonSize.size16),
                         padding: EdgeInsets.all(AppCommonSize.size16),
@@ -224,7 +223,7 @@ class _PaymentViewState extends State<PaymentView> {
                           ],
                         ),
                       ),
-                      SizedBox(height: 100,)
+                      SizedBox(height: 100),
                     ],
                   ),
                 ),
@@ -249,10 +248,12 @@ class _PaymentViewState extends State<PaymentView> {
           child: GradientButton(
             text: 'Ödemeyi Onayla',
             onPressed: () {
-              // Navigator.push(
-              //   context,
-              //   MaterialPageRoute(builder: (context) => PaymentView()),
-              // );
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => OrderConfirmationView(),
+                ),
+              );
             },
           ),
         ),

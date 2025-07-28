@@ -12,7 +12,7 @@ class LoginView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final _formKey = GlobalKey<FormState>();
+    final formKey = GlobalKey<FormState>();
     final size = MediaQuery.of(context).size;
     return Scaffold(
       body: SingleChildScrollView(
@@ -94,7 +94,7 @@ class LoginView extends StatelessWidget {
                     borderRadius: BorderRadius.circular(AppCommonSize.size20),
                   ),
                   child: Form(
-                    key: _formKey,
+                    key: formKey,
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       mainAxisSize: MainAxisSize.min,
@@ -166,7 +166,7 @@ class LoginView extends StatelessWidget {
                         GradientButton(
                           text: 'Giriş Yap',
                           onPressed: () {
-                            if (_formKey.currentState!.validate()) {}
+                            if (formKey.currentState!.validate()) {}
                           },
                         ),
                         SizedBox(height: AppCommonSize.size24),
