@@ -1,3 +1,4 @@
+import 'package:e_commerce_project/presentation/payment/payment_view.dart';
 import 'package:e_commerce_project/theme/app_color_theme.dart';
 import 'package:e_commerce_project/theme/app_common_size.dart';
 import 'package:e_commerce_project/widgets/gradient_button.dart';
@@ -473,10 +474,10 @@ class _CheckOutViewState extends State<CheckOutView> {
           child: GradientButton(
             text: 'Ödeme ile devam et',
             onPressed: () {
-              // Navigator.push(
-              //   context,
-              //   MaterialPageRoute(builder: (context) => PaymentView()),
-              // );
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => PaymentView()),
+              );
             },
           ),
         ),
