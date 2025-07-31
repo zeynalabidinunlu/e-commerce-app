@@ -1,5 +1,5 @@
 import 'package:e_commerce_project/presentation/main/main_view.dart';
-import 'package:e_commerce_project/presentation/order_confirmation/order_confirmation_view.dart';
+import 'package:e_commerce_project/presentation/order_tracking/order_tracking_view.dart';
 import 'package:e_commerce_project/theme/app_color_theme.dart';
 import 'package:e_commerce_project/theme/app_common_size.dart';
 import 'package:e_commerce_project/widgets/gradient_button.dart';
@@ -452,7 +452,14 @@ class _OrderConfirmationViewState extends State<OrderConfirmationView> {
                       borderRadius: BorderRadiusGeometry.circular(12),
                     ),
                   ),
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.pushReplacement(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => OrderTrackingView(),
+                      ),
+                    );
+                  },
                   child: Text('Sipariş Takibi'),
                 ),
               ),
@@ -461,7 +468,7 @@ class _OrderConfirmationViewState extends State<OrderConfirmationView> {
                 child: GradientButton(
                   text: 'Alışverişe Devam Et',
                   onPressed: () {
-                    Navigator.push(
+                    Navigator.pushReplacement(
                       context,
                       MaterialPageRoute(builder: (context) => MainView()),
                     );
