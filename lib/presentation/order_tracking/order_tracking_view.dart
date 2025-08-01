@@ -1,4 +1,5 @@
 import 'package:e_commerce_project/presentation/main/main_view.dart';
+import 'package:e_commerce_project/presentation/order_detail/order_detail_view.dart';
 import 'package:e_commerce_project/theme/app_color_theme.dart';
 import 'package:e_commerce_project/theme/app_common_size.dart';
 import 'package:e_commerce_project/widgets/gradient_button.dart';
@@ -430,7 +431,7 @@ class OrderTrackingView extends StatelessWidget {
                     Navigator.pushReplacement(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => OrderTrackingView(),
+                        builder: (context) => OrderDetailView(),
                       ),
                     );
                   },

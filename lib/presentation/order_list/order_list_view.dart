@@ -1,3 +1,4 @@
+import 'package:e_commerce_project/presentation/order_detail/order_detail_view.dart';
 import 'package:e_commerce_project/presentation/order_tracking/order_tracking_view.dart';
 import 'package:e_commerce_project/theme/app_color_theme.dart';
 import 'package:e_commerce_project/theme/app_common_size.dart';
@@ -286,7 +287,7 @@ class OrderListView extends StatelessWidget {
                   items: order['items'] as List<String>, 
                   total: order['total'] as double, 
                   onTap: () {
-                   // Navigator.push(context, MaterialPageRoute(builder: (context) => OrdersDetailView(),));
+                   Navigator.push(context, MaterialPageRoute(builder: (context) => OrderDetailView(),));
                   }, 
                   context: context),),
                 ],
