@@ -1,4 +1,5 @@
 import 'package:e_commerce_project/presentation/product_detail/product_detail_view.dart';
+import 'package:e_commerce_project/presentation/search_filter/search_filter_view.dart';
 import 'package:e_commerce_project/theme/app_color_theme.dart';
 import 'package:e_commerce_project/theme/app_common_size.dart';
 import 'package:flutter/material.dart';
@@ -127,32 +128,32 @@ class HomeView extends StatelessWidget {
                         ),
                       ],
                     ),
-                    child: Row(
-                      crossAxisAlignment: CrossAxisAlignment.center,
-                      children: [
-                        Expanded(
-                          child: TextField(
-                            onSubmitted: (value) {
-                              // Navigator.push(context, MaterialPageRoute(builder: (context) => SearchView(),))
+                    child: Center(
+                      child: TextField(
+                        onSubmitted: (value) {
+                          // Navigator.push(context, MaterialPageRoute(builder: (context) => SearchView(),))
+                        },
+                        decoration: InputDecoration(
+                          hintText: 'Ürünleri Ara ... ',
+                          border: InputBorder.none,
+                          hintStyle: TextStyle(
+                            color: AppColorTheme.textSecondary,
+                          ),
+
+                          suffixIcon: IconButton(
+                            icon: Icon(Icons.search),
+                            color: AppColorTheme.primaryColor,
+                            onPressed: () {
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) => SearchFilterView(),
+                                ),
+                              );
                             },
-                            decoration: InputDecoration(
-                              hintText: 'Ürünleri Ara ... ',
-                              border: InputBorder.none,
-                              hintStyle: TextStyle(
-                                color: AppColorTheme.textSecondary,
-                              ),
-                              prefixIcon: Icon(
-                                Icons.search,
-                                color: AppColorTheme.textSecondary,
-                              ),
-                              suffixIcon: Icon(
-                                Icons.tune,
-                                color: AppColorTheme.primaryColor,
-                              ),
-                            ),
                           ),
                         ),
-                      ],
+                      ),
                     ),
                   ),
                 ),

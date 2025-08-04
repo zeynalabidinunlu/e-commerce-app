@@ -1,4 +1,3 @@
-import 'package:e_commerce_project/presentation/main/main_view.dart';
 import 'package:e_commerce_project/presentation/order_tracking/order_tracking_view.dart';
 import 'package:e_commerce_project/theme/app_color_theme.dart';
 import 'package:e_commerce_project/theme/app_common_size.dart';

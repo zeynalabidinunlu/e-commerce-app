@@ -1,7 +1,5 @@
 
 import 'package:e_commerce_project/presentation/main/main_view.dart';
-import 'package:e_commerce_project/presentation/order_confirmation/order_confirmation_view.dart';
-import 'package:e_commerce_project/presentation/order_list/order_list_view.dart';
 import 'package:e_commerce_project/theme/app_color_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -28,7 +26,7 @@ class MainApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Alışverişim',
       theme: AppColorTheme.lightTheme,
-      home: OrderListView(),
+      home: MainView(),
     );
   }
 }
