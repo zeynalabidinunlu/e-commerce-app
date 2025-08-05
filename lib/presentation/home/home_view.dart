@@ -1,3 +1,4 @@
+import 'package:e_commerce_project/presentation/categories/categories_view.dart';
 import 'package:e_commerce_project/presentation/product_detail/product_detail_view.dart';
 import 'package:e_commerce_project/presentation/search_filter/search_filter_view.dart';
 import 'package:e_commerce_project/theme/app_color_theme.dart';
@@ -178,7 +179,12 @@ class HomeView extends StatelessWidget {
                           ),
                           TextButton(
                             onPressed: () {
-                              // Navigator.push(context, MaterialPageRoute(builder: (context) => ProductCategoriesView(),))
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) => CategoriesView(),
+                                ),
+                              );
                             },
                             child: Text(
                               'Hepsini Gör',
