@@ -1,3 +1,4 @@
+import 'package:e_commerce_project/presentation/ratings_review/ratings_review_view.dart';
 import 'package:e_commerce_project/theme/app_color_theme.dart';
 import 'package:e_commerce_project/theme/app_common_size.dart';
 import 'package:e_commerce_project/widgets/gradient_button.dart';
@@ -435,7 +436,14 @@ class _ProductDetailViewState extends State<ProductDetailView> {
                                 ),
                               ),
                               TextButton(
-                                onPressed: () {},
+                                onPressed: () {
+                                  Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                      builder: (context) => RatingsReviewView(),
+                                    ),
+                                  );
+                                },
                                 child: Text('Hepsini Gör'),
                               ),
                             ],
