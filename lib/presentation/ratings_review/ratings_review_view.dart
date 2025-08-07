@@ -1,3 +1,4 @@
+import 'package:e_commerce_project/presentation/write_review/write_review_view.dart';
 import 'package:e_commerce_project/theme/app_color_theme.dart';
 import 'package:e_commerce_project/theme/app_common_size.dart';
 import 'package:flutter/material.dart';
@@ -401,7 +402,12 @@ class _RatingsReviewViewState extends State<RatingsReviewView> {
         ],
       ),
       floatingActionButton: FloatingActionButton.extended(
-        onPressed: () {},
+        onPressed: () {
+          Navigator.push(
+            context,
+            MaterialPageRoute(builder: (context) => WriteReviewView()),
+          );
+        },
         label: Text('Yorum Yap'),
         icon: Icon(Icons.rate_review_outlined),
       ),
