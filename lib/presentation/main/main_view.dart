@@ -2,6 +2,7 @@ import 'package:e_commerce_project/presentation/cart/cart_view.dart';
 import 'package:e_commerce_project/presentation/chat/chat_view.dart';
 import 'package:e_commerce_project/presentation/home/home_view.dart';
 import 'package:e_commerce_project/presentation/profile/profile_view.dart';
+import 'package:e_commerce_project/presentation/wish_list/wish_list_view.dart';
 import 'package:e_commerce_project/theme/app_color_theme.dart';
 import 'package:e_commerce_project/theme/app_common_size.dart';
 import 'package:flutter/material.dart';
@@ -17,6 +18,7 @@ class _MainViewState extends State<MainView> {
   int _currentIndex = 0;
   final List<Widget> _screens = [
     HomeView(),
+    WishListView(),
     ChatView(),
     CartView(),
     ProfileView(),
@@ -60,9 +62,15 @@ class _MainViewState extends State<MainView> {
                   ),
                   _buildNavItem(
                     1,
+                    Icons.bookmarks_outlined,
+                    Icons.bookmark,
+                    'Favoriler',
+                  ),
+                  _buildNavItem(
+                    2,
                     Icons.favorite,
                     Icons.favorite_outline,
-                    'Favorilerim',
+                    'Sohbet',
                   ),
                   _buildCarNavItem(),
 
