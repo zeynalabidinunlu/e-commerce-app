@@ -75,7 +75,7 @@ class _MainViewState extends State<MainView> {
                   _buildCarNavItem(),
 
                   _buildNavItem(
-                    3,
+                    4,
                     Icons.person_outline,
                     Icons.person,
                     'Profil',
@@ -136,9 +136,9 @@ class _MainViewState extends State<MainView> {
   }
 
   Widget _buildCarNavItem() {
-    bool isSelected = _currentIndex == 2;
+    bool isSelected = _currentIndex == 3;
     return GestureDetector(
-      onTap: () => setState(() => _currentIndex = 2),
+      onTap: () => setState(() => _currentIndex = 3),
       child: Container(
         padding: EdgeInsets.symmetric(
           horizontal: AppCommonSize.size16,
