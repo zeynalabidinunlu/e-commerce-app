@@ -1,5 +1,6 @@
 
 import 'package:e_commerce_project/presentation/main/main_view.dart';
+import 'package:e_commerce_project/presentation/splash/splash_view.dart';
 import 'package:e_commerce_project/theme/app_color_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';

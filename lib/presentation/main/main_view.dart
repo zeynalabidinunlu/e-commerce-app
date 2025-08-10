@@ -1,5 +1,5 @@
 import 'package:e_commerce_project/presentation/cart/cart_view.dart';
-import 'package:e_commerce_project/presentation/chat/chat_view.dart';
+import 'package:e_commerce_project/presentation/chat_list/chat_list_view.dart';
 import 'package:e_commerce_project/presentation/home/home_view.dart';
 import 'package:e_commerce_project/presentation/profile/profile_view.dart';
 import 'package:e_commerce_project/presentation/wish_list/wish_list_view.dart';
@@ -19,7 +19,7 @@ class _MainViewState extends State<MainView> {
   final List<Widget> _screens = [
     HomeView(),
     WishListView(),
-    ChatView(),
+    ChatListView(),
     CartView(),
     ProfileView(),
   ];
@@ -68,8 +68,8 @@ class _MainViewState extends State<MainView> {
                   ),
                   _buildNavItem(
                     2,
-                    Icons.favorite,
-                    Icons.favorite_outline,
+                    Icons.chat_bubble_outline,
+                    Icons.chat_bubble,
                     'Sohbet',
                   ),
                   _buildCarNavItem(),
