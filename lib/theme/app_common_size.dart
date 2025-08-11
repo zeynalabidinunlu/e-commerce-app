@@ -61,8 +61,10 @@ class AppCommonSize {
   static const double size72 = 72.0;
   static const double size80 = 80.0;
   static const double size96 = 96.0;
+  static const double size100 = 100.0;
   static const double size112 = 112.0;
   static const double size128 = 128.0;
+  static const double size150 = 150.0;
   static const double size160 = 160.0;
   static const double size192 = 192.0;
   static const double size256 = 256.0;
