@@ -1,3 +1,4 @@
+import 'package:e_commerce_project/presentation/chat/chat_view.dart';
 import 'package:e_commerce_project/theme/app_color_theme.dart';
 import 'package:e_commerce_project/theme/app_common_size.dart';
 import 'package:flutter/material.dart';
@@ -172,7 +173,12 @@ class ChatListView extends StatelessWidget {
                     final chat = chatList[index];
 
                     return InkWell(
-                      onTap: () {},
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => ChatView()),
+                        );
+                      },
                       child: Container(
                         margin: EdgeInsets.symmetric(
                           vertical: AppCommonSize.size8,
