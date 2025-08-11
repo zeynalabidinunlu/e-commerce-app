@@ -196,7 +196,7 @@ class OrderDetailView extends StatelessWidget {
                                 ),
                               ),
                               child: Text(
-                                'Sevkiyat Aşamasında',
+                                'Sevkiyat\nAşamasında',
                                 style: TextStyle(
                                   color: AppColorTheme.warningColor,
                                   fontWeight: FontWeight.bold,
@@ -300,36 +300,36 @@ class OrderDetailView extends StatelessWidget {
                     ),
                   ),
                   SizedBox(height: AppCommonSize.size24),
-                  Container(
-                    padding: EdgeInsets.all(AppCommonSize.size16),
-                    decoration: BoxDecoration(
-                      color: Colors.white,
-                      borderRadius: BorderRadius.circular(AppCommonSize.size16),
-                    ),
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Text(
-                          'Kargo Bilgileri',
-                          style: TextStyle(
-                            fontSize: AppCommonSize.size18,
-                            fontWeight: FontWeight.bold,
-                            color: AppColorTheme.textInverse,
-                          ),
-                        ),
-                        SizedBox(height: 16),
-                        _buildDetailItem('Kargo Şirketi', 'Yurtiçi Kargo'),
-                        _buildDetailItem('Takip Numarası', '1234567890'),
-                        _buildDetailItem('Gönderim Tarihi', '01 Ağustos 2025'),
-                        _buildDetailItem('Tahmini Teslimat', '05 Ağustos 2025'),
-                        _buildDetailItem(
-                          'Durum',
-                          'Sevkiyat Aşamasında',
-                          isPrimary: true,
-                        ),
-                      ],
-                    ),
-                  ),
+                  // Container(
+                  //   padding: EdgeInsets.all(AppCommonSize.size16),
+                  //   decoration: BoxDecoration(
+                  //     color: Colors.white,
+                  //     borderRadius: BorderRadius.circular(AppCommonSize.size16),
+                  //   ),
+                  //   child: Column(
+                  //     crossAxisAlignment: CrossAxisAlignment.start,
+                  //     children: [
+                  //       Text(
+                  //         'Kargo Bilgileri',
+                  //         style: TextStyle(
+                  //           fontSize: AppCommonSize.size18,
+                  //           fontWeight: FontWeight.bold,
+                  //           color: AppColorTheme.textInverse,
+                  //         ),
+                  //       ),
+                  //       SizedBox(height: 16),
+                  //       _buildDetailItem('Kargo Şirketi', 'Yurtiçi Kargo'),
+                  //       _buildDetailItem('Takip Numarası', '1234567890'),
+                  //       _buildDetailItem('Gönderim Tarihi', '01 Ağustos 2025'),
+                  //       _buildDetailItem('Tahmini Teslimat', '05 Ağustos 2025'),
+                  //       _buildDetailItem(
+                  //         'Durum',
+                  //         'Sevkiyat Aşamasında',
+                  //         isPrimary: true,
+                  //       ),
+                  //     ],
+                  //   ),
+                  // ),
                   SizedBox(height: AppCommonSize.size24),
                   Container(
                     padding: EdgeInsets.all(AppCommonSize.size16),

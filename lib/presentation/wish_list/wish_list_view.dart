@@ -44,7 +44,7 @@ class WishListView extends StatelessWidget {
                       radius: AppCommonSize.size12,
                       backgroundColor: Colors.white,
                       child: Text(
-                        '6',
+                        '4',
                         style: TextStyle(
                           color: AppColorTheme.primaryColor,
                           fontSize: AppCommonSize.size12,
@@ -111,7 +111,7 @@ class WishListView extends StatelessWidget {
             Stack(
               children: [
                 Container(
-                  height: 180,
+                  height: 150,
                   decoration: BoxDecoration(
                     color: AppColorTheme.primaryColor.withValues(alpha: 0.1),
                     borderRadius: BorderRadius.vertical(

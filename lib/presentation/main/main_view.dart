@@ -42,11 +42,11 @@ class _MainViewState extends State<MainView> {
         child: SafeArea(
           child: Padding(
             padding: EdgeInsets.symmetric(
-              horizontal: AppCommonSize.size8,
+              horizontal: AppCommonSize.size6,
               vertical: AppCommonSize.size8,
             ),
             child: Container(
-              padding: EdgeInsets.symmetric(horizontal: 8),
+              padding: EdgeInsets.symmetric(horizontal: 6),
               decoration: BoxDecoration(
                 color: Colors.white,
                 borderRadius: BorderRadius.circular(AppCommonSize.size20),
