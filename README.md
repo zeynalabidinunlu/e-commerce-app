@@ -76,4 +76,8 @@ Bu e-ticaret uygulaması, kullanıcıların online alışveriş deneyimini en ü
 
 **E-posta:** zeynalabidiunlu@gmail.com
 
-Proje Linki: [https://github.com/zeynalabidinunlu/e_commerce_project](https://github.com/zeynalabidinunlu/e-commerce-app)
+☕ **Destek olmak isterseniz:** [Buy me a coffee](https://buymeacoffee.com/zeynalabidwf)
+
+Proje Linki: [https://github.com/zeynalabidinunlu/e-commerce-app](https://github.com/zeynalabidinunlu/e-commerce-app)
+
+
