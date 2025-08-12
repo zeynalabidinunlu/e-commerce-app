@@ -1,3 +1,4 @@
+import 'package:e_commerce_project/presentation/edit_user_detail/edit_user_detail_view.dart';
 import 'package:e_commerce_project/theme/app_color_theme.dart';
 import 'package:e_commerce_project/theme/app_common_size.dart';
 import 'package:flutter/material.dart';
@@ -132,7 +133,14 @@ class UserDetailsView extends StatelessWidget {
                         ),
                       ),
                       IconButton(
-                        onPressed: () {},
+                        onPressed: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => EditUserDetailView(),
+                            ),
+                          );
+                        },
                         icon: Icon(Icons.edit, color: Colors.white),
                       ),
                     ],
@@ -217,16 +225,13 @@ class UserDetailsView extends StatelessWidget {
                             label: 'Cinsiyet',
                             value: 'Erkek',
                           ),
-                         
                         ]),
-                          _buildSection('Hesap Bilgileri', [
+                        _buildSection('Hesap Bilgileri', [
                           _buildInfoRow(
                             icon: Icons.calendar_month,
                             label: 'Katılma Tarihi',
                             value: 'Ekim 2022',
                           ),
-                          
-                         
                         ]),
                       ],
                     ),

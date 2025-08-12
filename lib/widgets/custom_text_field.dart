@@ -30,7 +30,7 @@ class CustomTextField extends StatelessWidget {
         borderRadius: BorderRadius.circular(AppCommonSize.size16),
         boxShadow: [
           BoxShadow(
-            color: AppColorTheme.primaryColor.withValues(alpha: 0.1),
+            color: AppColorTheme.primaryColor.withValues(alpha: 0.3),
             offset: Offset(0, 5),
             blurRadius: AppCommonSize.size20,
           ),
