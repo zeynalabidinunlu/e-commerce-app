@@ -67,7 +67,13 @@ Bu e-ticaret uygulaması, kullanıcıların online alışveriş deneyimini en ü
   <img src="https://github.com/user-attachments/assets/b60f763d-c35d-4223-b3e2-751b7336f75f" width="150" />
 </div>
 
+
+https://github.com/user-attachments/assets/3fd80274-b0ef-48af-948d-5987627576d3
+
+
 ## 🛠️ Kullanılan Teknolojiler
+
+
 
 - **Flutter**: Cross-platform mobil uygulama geliştirme framework'ü
 - **Dart**: Flutter için kullanılan programlama dili
