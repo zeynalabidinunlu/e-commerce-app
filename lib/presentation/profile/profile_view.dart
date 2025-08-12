@@ -1,3 +1,5 @@
+import 'package:e_commerce_project/presentation/order_list/order_list_view.dart';
+import 'package:e_commerce_project/presentation/user_detail/user_details_view.dart';
 import 'package:e_commerce_project/theme/app_color_theme.dart';
 import 'package:e_commerce_project/theme/app_common_size.dart';
 import 'package:flutter/material.dart';
@@ -314,7 +316,15 @@ class ProfileView extends StatelessWidget {
                                     icon: Icons.person_outline,
                                     title: 'Hesap Detayları',
                                     subtitle: 'Profil bilgilerini güncelle',
-                                    onTap: () {},
+                                    onTap: () {
+                                      Navigator.push(
+                                        context,
+                                        MaterialPageRoute(
+                                          builder: (context) =>
+                                              UserDetailsView(),
+                                        ),
+                                      );
+                                    },
                                     color: AppColorTheme.primaryColor,
                                   ),
                                   _buildMenuItem(
@@ -341,7 +351,14 @@ class ProfileView extends StatelessWidget {
                                     icon: Icons.shopping_bag_outlined,
                                     title: 'Siparişlerim',
                                     subtitle: 'Sipariş geçmişini görüntüle',
-                                    onTap: () {},
+                                    onTap: () {
+                                      Navigator.push(
+                                        context,
+                                        MaterialPageRoute(
+                                          builder: (context) => OrderListView(),
+                                        ),
+                                      );
+                                    },
                                     color: AppColorTheme.secondaryColor,
                                   ),
                                   _buildMenuItem(
@@ -360,7 +377,7 @@ class ProfileView extends StatelessWidget {
                                   ),
                                 ],
                               ),
-                                 SizedBox(height: AppCommonSize.size24),
+                              SizedBox(height: AppCommonSize.size24),
                               _buildSection(
                                 title: 'Daha Fazlası',
                                 items: [
@@ -384,14 +401,14 @@ class ProfileView extends StatelessWidget {
                                     subtitle: '',
                                     onTap: () {},
                                     color: AppColorTheme.errorColor,
-                                    isDestructive: true
+                                    isDestructive: true,
                                   ),
                                 ],
                               ),
                             ],
                           ),
                         ),
-                        SizedBox(height: AppCommonSize.size100,)
+                        SizedBox(height: AppCommonSize.size100),
                       ],
                     ),
                   ),
